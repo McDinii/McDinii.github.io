@@ -14,17 +14,19 @@ request.onload = function () { // ожидание ответа на возвр�
 }
 function leader(jsonObj) {
     var leaders = jsonObj.leaders;
-    console.log(leaders[0])
-    let leader_h1 = document.querySelectorAll('.info h1');
-    let leader_p = document.querySelectorAll( '.info p' );
-    let leader_img = document.querySelectorAll( 'img.leader' );
+
+    let leader_h1 = document.querySelectorAll('.info.leader h1');
+    let leader_p = document.querySelectorAll( '.info.leader p' );
+    let leader_img = document.querySelectorAll( 'img.leaderImg' );
     for (var i = 0; i < leaders.length; i++) {
 
-        leader_h1[i].innerHTML = "хуй";
+        leader_h1[i].innerHTML = leaders[i].name+'    a';
         console.log( leaders[i].name );
         leader_p[i].innerHTML = leaders[i].price ;
         console.log( leaders[i].price );
+        console.log(leaders[i].img)
         leader_img[i].src = leaders[i].img;
+
     }
 }
 

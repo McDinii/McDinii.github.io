@@ -308,7 +308,8 @@
     ]
   },
   "leaders": [
-     {"_id": "14",
+    {
+      "_id": "14",
       "rating": 4.5,
       "numReviews": 12,
       "img": "img/images/coffe_table_eternity.png",
@@ -317,8 +318,10 @@
       "category": "Журнальные столы",
       "price": "149.99$",
       "description": "",
-      "quantity": 3},
-     {"_id": "28",
+      "quantity": 3
+    },
+    {
+      "_id": "28",
       "rating": 4.8,
       "numReviews": 18,
       "name": "Обеденный стол 'Comfort'",
@@ -327,8 +330,10 @@
       "category": "Обеденные столы",
       "price": "350&#36;",
       "description": "",
-      "quantity": 3},
-    {"_id": "29",
+      "quantity": 3
+    },
+    {
+      "_id": "29",
       "rating": 4.5,
       "numReviews": 17,
       "name": "Декоротивная картина 'Waves'",
@@ -337,8 +342,10 @@
       "category": "Декор",
       "price": "139&#36;",
       "description": "",
-      "quantity": 10},
-     {"_id": "30",
+      "quantity": 10
+    },
+    {
+      "_id": "30",
       "rating": 4.7,
       "numReviews": 12,
       "name": "Зеркала 'Cosy'",
@@ -347,7 +354,8 @@
       "category": "Декор",
       "price": "89&#36;",
       "description": "",
-      "quantity": 21}
+      "quantity": 21
+    }
   ],
   "header": {
     "like": "img/like.png",
@@ -361,26 +369,58 @@
     "inst": "img/inst.png",
     "mail": "img/mail.png"
   },
-  "quality": {
-    "hands":"img/hands.png",
-    "quality": "img/quality",
-    "tree": "img/tree.png",
-    "work": "img/work.png"
-  },
-  "categories": [{
-    "name":"Журнальные столы",
-    "img":"img/menu/coffe_tables.png"},
-    {"name":"Полки",
-    "img":"img/menu/shelves.png"},
-    {"name":"Столы с декором",
-    "img":"img/menu/tables_with_decor.png"},
-    {"name":"Декор",
-    "img":"img/menu/decor.png"}
+  "quality": [
+    {
+      "text": "Качественная\n cbcmrf",
+      "img":"img/quality.png"
+    },
+    {
+      "text": "Натуральные</br>материалы",
+      "img": "img/tree.png"
+    },
+    {
+      "text": "Индивидуальный</br>подход",
+      "img": "img/hands.png"
+    },
+    {
+      "text": "Собственное</br>производство",
+      "img": "img/work.png"
+    }
   ],
-  "slider":["img/slider/slider1.png","img/slider/slider2.png",
-    "img/slider/slider3.png","img/slider/slider4.png",
-    "img/slider/slider5.png"],
-  "gallery":["img/furniture/1.png","img/furniture/3.png",
-    "img/furniture/2.png","img/furniture/4.png","img/furniture/5.png","img/furniture/6.png",
-  "img/furniture/8.png","img/furniture/7.png","img/furniture/9.png"]
+  "categories": [
+    {
+      "name": "Журнальные столы",
+      "img": "img/menu/coffe_tables.png"
+    },
+    {
+      "name": "Полки",
+      "img": "img/menu/shelves.png"
+    },
+    {
+      "name": "Столы с декором",
+      "img": "img/menu/tables_with_decor.png"
+    },
+    {
+      "name": "Декор",
+      "img": "img/menu/decor.png"
+    }
+  ],
+  "slider": [
+    "img/slider/slider1.png",
+    "img/slider/slider2.png",
+    "img/slider/slider3.png",
+    "img/slider/slider4.png",
+    "img/slider/slider5.png"
+  ],
+  "gallery": [
+    "img/furniture/1.png",
+    "img/furniture/3.png",
+    "img/furniture/2.png",
+    "img/furniture/4.png",
+    "img/furniture/5.png",
+    "img/furniture/6.png",
+    "img/furniture/8.png",
+    "img/furniture/7.png",
+    "img/furniture/9.png"
+  ]
 }

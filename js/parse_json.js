@@ -1,4 +1,4 @@
-var requestURL = 'https://raw.githubusercontent.com/McDinii/HTML-CSS-XML/main/Course_project/js/files.json';
+var requestURL = 'https://raw.githubusercontent.com/McDinii/McDinii.github.io/main/js/files.json';
 //Начнём с того, что мы собираемся сохранить URL-адрес JSON, который мы хотим получить в переменной.
 
 var request = new XMLHttpRequest(); //Чтобы создать запрос, нам нужно создать новый экземпляр объекта запроса из конструктора XMLHttpRequest, используя ключевое слово new.
@@ -10,58 +10,38 @@ request.send();
 
 request.onload = function () { // ожидание ответа на возврат с сервера, а затем работы с ним
     var Json = request.response;
-    leader(Json);
-}
-function leader(jsonObj) {
-    var leaders = jsonObj.leaders;
+    leader(Json.leaders);
+    slider(Json.slider);
+    quality(Json.quality);
 
+}
+function leader(leaders) {
     let leader_h1 = document.querySelectorAll('.info.leader h1');
     let leader_p = document.querySelectorAll( '.info.leader p' );
     let leader_img = document.querySelectorAll( 'img.leaderImg' );
     for (var i = 0; i < leaders.length; i++) {
-
-        leader_h1[i].innerHTML = leaders[i].name+'    a';
-        console.log( leaders[i].name );
+        leader_h1[i].innerHTML = leaders[i].name;
         leader_p[i].innerHTML = leaders[i].price ;
-        console.log( leaders[i].price );
-        console.log(leaders[i].img)
         leader_img[i].src = leaders[i].img;
-
     }
 }
-
-
-/*
-function showHeroes(jsonObj) {
-    var heroes = jsonObj['members'];
-
-    for (var i = 0; i < heroes.length; i++) {
-        var myArticle = document.createElement('article');
-        var myH2 = document.createElement('h2');
-        var myPara1 = document.createElement('p');
-        var myPara2 = document.createElement('p');
-        var myPara3 = document.createElement('p');
-        var myList = document.createElement('ul');
-
-        myH2.textContent = heroes[i].name;
-        myPara1.textContent = 'Secret identity: ' + heroes[i].secretIdentity;
-        myPara2.textContent = 'Age: ' + heroes[i].age;
-        myPara3.textContent = 'Superpowers:';
-
-        var superPowers = heroes[i].powers;
-        for (var j = 0; j < superPowers.length; j++) {
-            var listItem = document.createElement('li');
-            listItem.textContent = superPowers[j];
-            myList.appendChild(listItem);
+function slider(slides) {
+    let slide_img = document.querySelectorAll('.swiper-img img');
+    for ( var i=0,j=0; i < slide_img.length;i++,j++)  {
+        if (j === slides.length){
+            j = 0
         }
-
-        myArticle.appendChild(myH2);
-        myArticle.appendChild(myPara1);
-        myArticle.appendChild(myPara2);
-        myArticle.appendChild(myPara3);
-        myArticle.appendChild(myList);
-
-        section.appendChild(myArticle);
+        slide_img[i].src = slides[j];
     }
 }
-*/
+function quality(character) {
+    let img_ch = document.querySelectorAll('.character_img img');
+    let text_ch = document.querySelectorAll('div.character_text');
+    for ( var i=0; i < text_ch.length;i++)  {
+        console.log(character[i].text)
+        console.log(character[i].img)
+        text_ch[i].innerHTML = character[i].text;
+        img_ch[i].src = character[i].img;
+    }
+}
+

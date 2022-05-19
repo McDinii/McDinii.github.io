@@ -9,14 +9,14 @@
 }
 @media(any-hover:none){
     .furniture_body {
-        overflow: auto; /*Ð³Ð¾Ñ€Ð¸Ð·Ð¾Ð½Ñ‚Ð°Ð»ÑŒÐ½Ñ‹Ð¹ ÑÐºÑ€Ð¾Ð»*/
-        -webkit-overflow-scrolling: touth; /*Ð¿Ð»Ð°Ð²Ð½Ñ‹Ð¹ ÑÐºÑ€Ð¾Ð»*/
+        overflow: auto;
+        -webkit-overflow-scrolling: touth;
     }
 }
 .furniture_items {
     display: grid;
     grid-template-columns: auto;
-    grid-auto-flow: column; /*Ð½Ð°Ñ€Ð°Ñ‰Ð¸Ð²Ð°ÑŽÑ‚ÑÑ ÐºÐ¾Ð»Ð¾Ð½ÐºÐ¸*/
+    grid-auto-flow: column;
     align-items: center;
 }
 @media(any-hover:hover){
@@ -63,7 +63,7 @@
 @media(any-hover:hover){
     .row-furniture_item {
         transition: all 0.8s ease 0s;
-        filter:grayscale(1); /*Ð±ÐµÑÑ†Ð²ÐµÑ‚Ð½Ñ‹Ðµ ÐºÐ°Ñ€Ñ‚Ð¸Ð½ÐºÐ¸*/
+        filter:grayscale(1); /*делает картинки безцветными*/
     }
     .row-furniture_item:hover{
         filter: grayscale(0);

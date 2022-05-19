@@ -101,6 +101,11 @@
         width: 200px;
         object-fit: contain;
     }
+    img.goodsImg{
+        height:200px;
+        width: 200px;
+        object-fit: contain;
+    }
     .cell_info {
         top: 80px;
         height: 196px;
@@ -119,6 +124,11 @@
     .info p {
         font-size: 16px;
     }
+    img.goodsImg{
+        height:220px;
+        width: 180px;
+        object-fit: contain;
+    }
     .info img {
         right: 15px;
         top: 48px;
@@ -129,5 +139,10 @@
 @media(max-width:530px){
     .goods_container{
         justify-content: center;
+    }
+     img.goodsImg{
+        height:200px;
+        width: 170px;
+        object-fit: contain;
     }
 }

@@ -143,8 +143,8 @@
 }
 
 @media (max-width: 1024px) {
-  body.lock{
-    position:fixed;
+  body.lock {
+    overflow: hidden;
   }
 
   .header_wrapper {
@@ -191,6 +191,8 @@
     top: 50px;
     margin: auto;
     width: 100%;
+    border-bottom: 3px #252323 solid;
+    box-shadow: 0 0 13px #4c4c52;
   }
 
   .menu_list {
@@ -270,3 +272,4 @@
   }
 }
 
+/*# sourceMappingURL=header_menu.css.map */

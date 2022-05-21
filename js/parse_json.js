@@ -20,7 +20,7 @@ function leader(leaders) {
     let leader_p = document.querySelectorAll( '.info.leader p' );
     let leader_img = document.querySelectorAll( 'img.leaderImg' );
     for (var i = 0; i < leaders.length; i++) {
-        leader_h1[i].innerHTML = "хуй";
+        leader_h1[i].innerHTML = leaders[i].name;
         leader_p[i].innerHTML = leaders[i].price ;
         leader_img[i].src = leaders[i].img;
     }

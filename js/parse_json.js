@@ -20,7 +20,7 @@ function leader(leaders) {
     let leader_p = document.querySelectorAll( '.info.leader p' );
     let leader_img = document.querySelectorAll( 'img.leaderImg' );
     for (var i = 0; i < leaders.length; i++) {
-        leader_h1[i].innerHTML = leaders[i].name;
+        leader_h1[i].innerHTML = "хуй";
         leader_p[i].innerHTML = leaders[i].price ;
         leader_img[i].src = leaders[i].img;
     }
@@ -38,8 +38,6 @@ function quality(character) {
     let img_ch = document.querySelectorAll('.character_img img');
     let text_ch = document.querySelectorAll('div.character_text');
     for ( var i=0; i < text_ch.length;i++)  {
-        console.log(character[i].text)
-        console.log(character[i].img)
         text_ch[i].innerHTML = character[i].text;
         img_ch[i].src = character[i].img;
     }
